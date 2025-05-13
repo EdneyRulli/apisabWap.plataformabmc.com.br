@@ -1,0 +1,76 @@
+﻿namespace ApiSabWap.Model
+{
+    public class AtividadeModel
+    {
+        public int Id_Tecnico { get; set; }
+        public int Id { get; set; }
+        public int Id_Cliente { get; set; }
+        public int Id_Usuario { get; set; }
+        public int Id_UsuarioEquipe { get; set; }
+        public int Id_Status { get; set; }
+        public int Id_Equipamento { get; set; }
+        public int Id_EquipMarca { get; set; }
+        public int Id_EquipStatus { get; set; }
+        public int Id_EquipPlanoM { get; set; }
+        public int Id_EquipNecessidade { get; set; }
+        public int Id_Etapa { get; set; }
+        public int Id_SubE { get; set; }
+        public int? Id_Orcamento { get; set; }
+        public int Id_SubAtividade { get; set; }
+        public string NomeSolicitante { get; set; }
+        public string EmailSolicitante { get; set; }
+        public string EmailSolicitante2 { get; set; }
+        public string EmailSolicitante3 { get; set; }
+        public string EquipHorimetro { get; set; }
+        public string EquipModelo { get; set; }
+        public string EquipSerie { get; set; }
+        public string TipoRelatorio { get; set; }
+        public string CEP { get; set; }
+        public string Endereco { get; set; }
+        public string Numero { get; set; }
+        public string Bairro { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
+        public string Complemento { get; set; }
+        public string DescricaoAtividade { get; set; }
+        public string OrientacaoAtendimento { get; set; }
+        public DateTime DataCad { get; set; }
+        public string Cliente_Nome { get; set; }
+        public string Cliente_Cnpj { get; set; }
+        public string Cliente_Telefone { get; set; }
+        public string Cliente_Email { get; set; }
+        public string Status { get; set; }
+        public string Etapa { get; set; }
+        public string Equipamento { get; set; }
+        public string Equipamento_Modelo { get; set; }
+        public string Equipamento_Marca { get; set; }
+        public string Equipamento_Status { get; set; }
+        public string Equipamento_PlanoMensal { get; set; }
+        public string Equipamento_Necessidade { get; set; }
+        public float ValorServico_AprovadoCotacao { get; set; }
+        public string ServicoData { get; set; }
+        public string ServicoHora { get; set; }
+        public string ServicoNomeCliente { get; set; }
+        public string ServicoObs { get; set; }
+        public string Pedido_Compra { get; set; }
+        public int ValorServico_IdSubEtapa { get; set; }
+        public DateTime DataPrevistaAtendimento { get; set; }
+        public DateTime DataFimAtividade { get; set; }
+        public float CustoAdicionalVl { get; set; }
+        public string CustoAdicionalObs { get; set; }
+        public string obsOrientacaoAtendimento { get; set; }
+        public string DocInstrucoesServico { get; set; }
+        public string MotivoCotacaoReprovada { get; set; }
+        public string StatusClientePagamento { get; set; }
+        public string StatusClienteServico { get; set; }
+        public string DistanciaKmServico { get; set; }
+        public string ValorKM { get; set; }
+        public string ValorMaoObra { get; set; }
+        public string NomeTecnico { get; set; }
+        public string Responsavel_Nome { get; set; }
+        public string Responsavel_Tel { get; set; }
+        public string MotivoNFReprovada { get; set; }
+        public string DataVencimentoNFTec { get; set; }
+        public List<SubAtividades> SubAtividades { get; set; }
+    }
+}

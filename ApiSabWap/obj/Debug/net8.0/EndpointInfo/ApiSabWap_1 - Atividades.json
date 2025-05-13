@@ -1,0 +1,52 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Atividades",
+    "version": "v1"
+  },
+  "paths": {
+    "/Atividades": {
+      "get": {
+        "tags": [
+          "Atividades"
+        ],
+        "summary": "O retorno serão todos os dados da atividade princiapal com todas as subatividades e as perguntas de cada subatividade.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "Código da atividade principal.",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "idSub",
+            "in": "query",
+            "description": "Código da SubAtividade.",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "prChave",
+            "in": "query",
+            "description": "Chave de acesso.",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

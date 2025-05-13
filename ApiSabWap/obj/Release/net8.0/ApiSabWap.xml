@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiSabWap</name>
+    </assembly>
+    <members>
+        <member name="M:ApiSabWap.Controllers.AtividadesController.Detalhes(System.String,System.String,System.String)">
+            <summary>
+            O retorno serão todos os dados da atividade princiapal com todas as subatividades e as perguntas de cada subatividade.
+            </summary>
+            <param name="id">Código da atividade principal.</param>
+            <param name="idSub">Código da SubAtividade.</param>
+            <param name="prChave">Chave de acesso.</param>
+            <returns>O retorno serão todos os dados da atividade princiapal com todas as subatividades e as perguntas de cada subatividade.</returns>
+        </member>
+        <member name="M:ApiSabWap.Controllers.PerguntasRelController.Detalhes(System.String,System.String)">
+            <summary>
+            Retorna somente as perguntas de um relatorio especifico. Sem os dados da SUB e da ATIV.
+            </summary>
+            <param name="id">Código do relatório.</param>
+            <param name="prChave">Chave de acesso.</param>
+            <returns>Retorna somente as perguntas de um relatorio especifico. Sem os dados da SUB e da ATIV.</returns>
+        </member>
+        <member name="M:ApiSabWap.Controllers.PerguntasRelController.GravarResposta(ApiSabWap.Model.RespostaFormularioRequest)">
+            <summary>
+            Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.
+            </summary>
+            <returns>Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.</returns>
+        </member>
+        <member name="M:ApiSabWap.Controllers.PerguntasRelController.GravarRespostaFoto(ApiSabWap.Model.GravarFoto)">
+            <summary>
+            Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.
+            </summary>
+            <returns>Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.</returns>
+        </member>
+        <member name="M:ApiSabWap.Controllers.SubAtividadesController.Detalhes(System.String,System.String,System.String)">
+            <summary>
+            O retorno serão todos os dados da atividade princiapal com todas as subatividades e as perguntas de cada subatividade. Se passar o parametro id, vai retornar apenas essa SUB.
+            </summary>
+            <param name="id">Código da SubAtividade.</param>
+            <param name="idAtiv">Código da atividade principal.</param>
+            <param name="prChave">Chave de acesso.</param>
+            <returns>O retorno serão todos os dados da atividade princiapal com todas as subatividades e as perguntas de cada subatividade. Se passar o parametro id, vai retornar apenas essa SUB.</returns>
+        </member>
+    </members>
+</doc>

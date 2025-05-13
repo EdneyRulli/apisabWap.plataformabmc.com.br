@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zfChPQozrTRo6VUKOpKvSXrpBj5Cry8sURwTzY9Ij70=",
+  "Source": "ApiSabWap",
+  "BasePath": "_content/ApiSabWap",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

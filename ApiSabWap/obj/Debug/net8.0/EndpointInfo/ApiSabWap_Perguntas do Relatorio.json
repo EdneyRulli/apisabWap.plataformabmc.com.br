@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Perguntas do Relatorio",
+    "version": "v1"
+  },
+  "paths": {
+    "/PerguntasRel": {
+      "get": {
+        "tags": [
+          "PerguntasRel"
+        ],
+        "summary": "Retorna somente as perguntas de um relatorio especifico. Sem os dados da SUB e da ATIV.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "Código do relatório.",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "prChave",
+            "in": "query",
+            "description": "Chave de acesso.",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/PerguntasRel/GravarResposta": {
+      "post": {
+        "tags": [
+          "PerguntasRel"
+        ],
+        "summary": "Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RespostaFormularioRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/PerguntasRel/GravarRespostaFoto": {
+      "post": {
+        "tags": [
+          "PerguntasRel"
+        ],
+        "summary": "Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GravarFoto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GravarFoto": {
+        "type": "object",
+        "properties": {
+          "idTipoRel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSub": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imagemBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "chave": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespostaFormularioRequest": {
+        "type": "object",
+        "properties": {
+          "idPergunta": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSub": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resposta": {
+            "type": "string",
+            "nullable": true
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "chave": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@ApiSabWap_HostAddress = http://localhost:5126
+
+GET {{ApiSabWap_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

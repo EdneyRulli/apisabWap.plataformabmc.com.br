@@ -1,0 +1,107 @@
+[
+  {
+    "ContainingType": "ApiSabWap.Controllers.AtividadesController",
+    "Method": "Detalhes",
+    "RelativePath": "Atividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idSub",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "prChave",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSabWap.Controllers.PerguntasRelController",
+    "Method": "Detalhes",
+    "RelativePath": "PerguntasRel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "prChave",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSabWap.Controllers.PerguntasRelController",
+    "Method": "GravarResposta",
+    "RelativePath": "PerguntasRel/GravarResposta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiSabWap.Model.RespostaFormularioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSabWap.Controllers.PerguntasRelController",
+    "Method": "GravarRespostaFoto",
+    "RelativePath": "PerguntasRel/GravarRespostaFoto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiSabWap.Model.GravarFoto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSabWap.Controllers.SubAtividadesController",
+    "Method": "Detalhes",
+    "RelativePath": "SubAtividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idAtiv",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "prChave",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
