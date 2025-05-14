@@ -102,6 +102,28 @@
         }
       }
     },
+    "/PerguntasRel/GravarRespostaLista": {
+      "post": {
+        "tags": [
+          "PerguntasRel"
+        ],
+        "summary": "Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RespostaLista"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/PerguntasRel/GravarRespostaFoto": {
       "post": {
         "tags": [
@@ -216,6 +238,45 @@
           },
           "chave": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespostaFormularioRequestLista": {
+        "type": "object",
+        "properties": {
+          "idPergunta": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSub": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resposta": {
+            "type": "string",
+            "nullable": true
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespostaLista": {
+        "type": "object",
+        "properties": {
+          "chave": {
+            "type": "string",
+            "nullable": true
+          },
+          "listaRespostas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RespostaFormularioRequestLista"
+            },
             "nullable": true
           }
         },

@@ -5,21 +5,21 @@
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoyr4ckjxYEqkWDWwxE3SFgAAAAACAAAAAAAQZgAAAAEAACAAAABJmAODdZlhN415dHmA2LMPhlNetioVcfeQHviXB+JCnwAAAAAOgAAAAAIAACAAAADlOSBlUTIzqkgw/1P2RvX9MD/F+GiUVDBvMb9TUm2cWCAAAACjvOimoHkGZZlfY0D1tyJCzgBnCL4gFp1WuDT28N4jiUAAAACavS2xIu4q7aJw2Ip6Umo0gR3kCAJxqSUsct4VpnPbrpOATlBT0vfVXtfot/sO0XEh4sPS8s+Ywe/q+3yAXq6S</EncryptedPassword>
     <_PublishTargetUrl>ftp://10.255.255.68/WebSites/apisabwap.plataformabmc.com.br</_PublishTargetUrl>
-    <History>True|2025-05-13T19:30:13.7030337Z||;True|2025-05-13T16:19:29.4069533-03:00||;True|2025-05-13T15:52:19.5391896-03:00||;</History>
+    <History>True|2025-05-14T23:51:56.4830025Z||;True|2025-05-13T16:30:13.7030337-03:00||;True|2025-05-13T16:19:29.4069533-03:00||;True|2025-05-13T15:52:19.5391896-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApiSabWap.deps.json">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="ApiSabWap.dll">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="ApiSabWap.exe">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="ApiSabWap.pdb">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="ApiSabWap.runtimeconfig.json">
       <publishTime>05/13/2025 15:51:45</publishTime>
@@ -28,25 +28,25 @@
       <publishTime>05/13/2025 15:51:46</publishTime>
     </File>
     <File Include="ApiSabWap.xml">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="appsettings.Development.json">
-      <publishTime>05/02/2025 17:15:32</publishTime>
+      <publishTime>02/05/2025 17:15:32</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>05/02/2025 17:15:32</publishTime>
+      <publishTime>02/05/2025 17:15:32</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>02/26/2024 12:24:40</publishTime>
     </File>
     <File Include="Azure.Identity.dll">
-      <publishTime>06/10/2024 13:43:48</publishTime>
+      <publishTime>10/06/2024 13:43:48</publishTime>
     </File>
     <File Include="cs/Microsoft.Data.SqlClient.resources.dll">
       <publishTime>04/25/2025 16:03:48</publishTime>
     </File>
     <File Include="Dapper.dll">
-      <publishTime>02/06/2025 09:16:30</publishTime>
+      <publishTime>06/02/2025 09:16:30</publishTime>
     </File>
     <File Include="de/Microsoft.Data.SqlClient.resources.dll">
       <publishTime>04/25/2025 16:03:48</publishTime>
@@ -112,7 +112,7 @@
       <publishTime>03/26/2024 15:40:46</publishTime>
     </File>
     <File Include="Microsoft.OpenApi.dll">
-      <publishTime>03/06/2024 13:00:56</publishTime>
+      <publishTime>06/03/2024 13:00:56</publishTime>
     </File>
     <File Include="Microsoft.SqlServer.Server.dll">
       <publishTime>01/27/2022 14:19:08</publishTime>
@@ -163,7 +163,7 @@
       <publishTime>05/21/2024 13:42:50</publishTime>
     </File>
     <File Include="System.ClientModel.dll">
-      <publishTime>01/03/2024 14:43:00</publishTime>
+      <publishTime>03/01/2024 14:43:00</publishTime>
     </File>
     <File Include="System.Configuration.ConfigurationManager.dll">
       <publishTime>09/16/2024 20:09:48</publishTime>
@@ -178,7 +178,7 @@
       <publishTime>03/26/2024 15:38:42</publishTime>
     </File>
     <File Include="System.Memory.Data.dll">
-      <publishTime>04/08/2021 13:45:54</publishTime>
+      <publishTime>08/04/2021 13:45:54</publishTime>
     </File>
     <File Include="System.Private.Windows.Core.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -193,7 +193,7 @@
       <publishTime>04/25/2025 16:04:20</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/13/2025 16:29:47</publishTime>
+      <publishTime>05/14/2025 20:51:36</publishTime>
     </File>
     <File Include="zh-Hans/Microsoft.Data.SqlClient.resources.dll">
       <publishTime>04/25/2025 16:04:06</publishTime>

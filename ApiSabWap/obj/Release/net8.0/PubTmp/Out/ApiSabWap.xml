@@ -27,6 +27,12 @@
             </summary>
             <returns>Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.</returns>
         </member>
+        <member name="M:ApiSabWap.Controllers.PerguntasRelController.GravarRespostaLista(ApiSabWap.Model.RespostaLista)">
+            <summary>
+            Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.
+            </summary>
+            <returns>Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.</returns>
+        </member>
         <member name="M:ApiSabWap.Controllers.PerguntasRelController.GravarRespostaFoto(ApiSabWap.Model.GravarFoto)">
             <summary>
             Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.

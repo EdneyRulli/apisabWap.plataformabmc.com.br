@@ -79,6 +79,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ApiSabWap.Controllers.PerguntasRelController",
+    "Method": "GravarRespostaLista",
+    "RelativePath": "PerguntasRel/GravarRespostaLista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiSabWap.Model.RespostaLista",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiSabWap.Controllers.SubAtividadesController",
     "Method": "Detalhes",
     "RelativePath": "SubAtividades",

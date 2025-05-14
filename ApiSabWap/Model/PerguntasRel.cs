@@ -9,6 +9,20 @@
         public string Chave { get; set; }
     }
 
+    public class RespostaFormularioRequestLista
+    {
+        public int IdPergunta { get; set; }
+        public int IdSub { get; set; }
+        public string Resposta { get; set; }
+        public string Comentario { get; set; }
+    }
+
+    public class RespostaLista
+    {
+        public string Chave { get; set; }
+        public List<RespostaFormularioRequestLista> ListaRespostas { get; set; }
+    }
+
     public class GravarFoto
     {
         public int idFormulario { get; set; }

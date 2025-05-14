@@ -81,6 +81,37 @@ namespace ApiSabWap.Controllers
 
 
         /// <summary>
+        /// Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.
+        /// </summary>
+        /// <returns>Utilizado para gravar respostas das perguntas. Deve retornar TRUE ou mensagem de erro.</returns>
+        [HttpPost]
+        [Produces("application/json")]
+        [Consumes("application/json")]
+        [Route("GravarRespostaLista")]
+        public ActionResult GravarRespostaLista([FromBody] RespostaLista request)
+        {
+            if (request == null)
+                return BadRequest("Requisição vazia");
+
+
+            if (!VerificaToken(request.Chave))
+                return BadRequest("Chave inválida");
+
+            if (request.ListaRespostas.Count == 0)
+                return BadRequest("Requisição vazia");
+
+
+            var Resultado = _subactivityService.GravarRespostaLista(request);
+
+
+            if (!Resultado)
+                return StatusCode(500, "[Erro: Erro no processo]");
+
+
+            return Ok(Resultado);
+        }
+
+        /// <summary>
         /// Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.
         /// </summary>
         /// <returns>Utilizado para gravar as fotos do atendimento Deve retornar TRUE ou mensagem de erro.</returns>

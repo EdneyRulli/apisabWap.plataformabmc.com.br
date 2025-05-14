@@ -116,6 +116,34 @@ namespace ApiSabWap.Services
             }
         }
 
+        public bool GravarRespostaLista(RespostaLista request)
+        {
+            try
+            {
+                foreach (var itemResp in request.ListaRespostas)
+                {
+                    var parameters = new
+                    {
+                        PrId_Atividade = 0,
+                        PrId_SubAtividade = itemResp.IdSub,
+                        PrId_Usuario = 0,
+                        PrId_Pergunta = itemResp.IdPergunta,
+                        PrResposta = itemResp.Resposta,
+                        PrRespostaOBS = itemResp.Comentario,
+                        PrOrigemRespostas = "EVA"
+                    };
+
+                    conn.sqlConnection.Execute("Sp_GravarTiposFormularios_Respostas", parameters, commandType: CommandType.StoredProcedure);
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public bool GravarRespostaFotos(GravarFoto request)
         {
             string basePath         = AppDomain.CurrentDomain.BaseDirectory;
