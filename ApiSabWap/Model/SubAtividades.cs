@@ -37,6 +37,7 @@
         public string Equipamento_Status { get; set; }
         public string Equipamento_PlanoMensal { get; set; }
         public string Equipamento_Necessidade { get; set; }
+        public string StatusRelatorio { get; set; }
 
         public List<SubAtividadesPerguntas> PerguntasRelatorio { get; set; }
     }
@@ -47,6 +48,7 @@
         public string NomeRelatorio { get; set; }
         public string Descricao { get; set; }
         public string Ordem { get; set; }
+        public string Resposta { get; set; }
     }
 
 }

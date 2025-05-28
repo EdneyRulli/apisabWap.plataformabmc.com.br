@@ -23,42 +23,66 @@ namespace ApiSabWap.Services
             {
                 var parammeters = new {
                     PrId_Usuario        = 0,
-                    PrId_Atividade = prIdAtividade,
+                    PrId_Atividade      = prIdAtividade,
                     PrId_SubAtividade   = prIdSubAtividade
                 };
 
                 resultado = conn.sqlConnection.Query<SubAtividades>("Sp_ConsultaSubAtividades", parammeters, commandType: CommandType.StoredProcedure).ToList();
 
-
-                // LISTA SUSBS
-                foreach (var sub in resultado)
+                if (resultado.Any())
                 {
-                    var IdSub       = sub.ID;
-                    var IdRelatorio = sub.IdFormulario.ToString();
 
-
-                    // PREENCHE A LISTA DAS PERGUNTAS
-                    List<SubAtividadesPerguntas> resultado2 = ConsultarPerguntasRelatorio(IdRelatorio);
-
-                    if (resultado2 != null && resultado2.Any())
+                    // LISTA SUSBS
+                    foreach (var sub in resultado)
                     {
-                        if (sub.PerguntasRelatorio == null)
-                            sub.PerguntasRelatorio = new List<SubAtividadesPerguntas>();
+                        var IdSub       = sub.ID;
+                        var IdRelatorio = sub.IdFormulario.ToString();
+                        var RespostaForm= sub.StatusRelatorio;
+
+                        bool RelAprovado = false;
 
 
-                        // LISTA PERGUNTAS
-                        foreach (var pergunta in resultado2)
+                        if (!string.IsNullOrEmpty(RespostaForm))
                         {
-                            SubAtividadesPerguntas perguntaADD = new SubAtividadesPerguntas
-                            {
-                                ID              = pergunta.ID,
-                                Id_Formulario   = sub.IdFormulario,
-                                NomeRelatorio   = pergunta.NomeRelatorio,
-                                Descricao       = pergunta.Descricao,
-                                Ordem           = pergunta.Ordem
-                            };
+                            if (RespostaForm.ToUpper().Contains("APROVADO")) RelAprovado = true;
+                        }
 
-                            sub.PerguntasRelatorio.Add(perguntaADD);
+                        if (!RelAprovado)
+                        {
+                            // PREENCHE A LISTA DAS PERGUNTAS
+                            List<SubAtividadesPerguntas> resultado2 = ConsultarPerguntasRelatorio(IdRelatorio);
+
+                            if (resultado2 != null && resultado2.Any())
+                            {
+                                if (sub.PerguntasRelatorio == null)
+                                    sub.PerguntasRelatorio = new List<SubAtividadesPerguntas>();
+
+
+                                // LISTA PERGUNTAS
+                                foreach (var pergunta in resultado2)
+                                {
+                                    var varResposta = "";
+
+                                    var ConsultaResposta = ConsultaRelatorioResposta(prIdSubAtividade, IdRelatorio, pergunta.ID.ToString());
+
+                                    if (ConsultaResposta != null)
+                                        varResposta = ConsultaResposta.Resposta;
+
+
+
+                                    SubAtividadesPerguntas perguntaADD = new SubAtividadesPerguntas
+                                    {
+                                        ID              = pergunta.ID,
+                                        Id_Formulario   = sub.IdFormulario,
+                                        NomeRelatorio   = pergunta.NomeRelatorio,
+                                        Descricao       = pergunta.Descricao,
+                                        Ordem           = pergunta.Ordem,
+                                        Resposta        = varResposta    
+                                    };
+
+                                    sub.PerguntasRelatorio.Add(perguntaADD);
+                                }
+                            }
                         }
                     }
                 }
@@ -68,6 +92,27 @@ namespace ApiSabWap.Services
             catch (Exception)
             {
                 return resultado;
+            }
+        }
+
+        public RelatorioResposta ConsultaRelatorioResposta(string PprIdSubAtividade, string IdRelatorio, string perguntaID)
+        {
+            try
+            {
+                var parammeters = new
+                {
+                    prIdSubAtividade = PprIdSubAtividade
+                    ,prId_Formulario = IdRelatorio
+                    ,prIdPergunta = perguntaID
+                };
+
+                var resultado = conn.sqlConnection.Query<RelatorioResposta>("Sp_ListarTiposFormularios_Resposta", parammeters, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                return resultado;
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
 
@@ -88,7 +133,6 @@ namespace ApiSabWap.Services
             {
                 return null;
             }
-
         }
 
         public bool GravarResposta(RespostaFormularioRequest request)

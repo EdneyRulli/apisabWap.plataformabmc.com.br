@@ -32,6 +32,21 @@
         public string Chave { get; set; }
     }
 
+    public class RelatorioResposta
+    {
+        public string Tecnico { get; set; }
+        public string TipoRelatorio { get; set; }
+        public string Pergunta { get; set; }
+        public string Id_Formulario { get; set; }
+        public string Resposta { get; set; }
+        public string Imagem { get; set; }
+        public string Imagem2 { get; set; }
+        public string Imagem3 { get; set; }
+        public string Imagem4 { get; set; }
+        public string Video { get; set; }
+        public string Obs { get; set; }
+    }
+
     
 
 }

@@ -73,12 +73,6 @@ D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.build.json
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.development.json
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets\msbuild.ApiSabWap.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets\msbuild.ApiSabWap.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiSabWap.props
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiSabWap.props
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiSabWap.props
-D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\ApiSabWap.csproj.Up2Date
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\ApiSabWap.dll
@@ -87,3 +81,4 @@ D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\ApiSabWap.pdb
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\ApiSabWap.genruntimeconfig.cache
 D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\ref\ApiSabWap.dll
+D:\Web Sites\BMC\GitHub\apisabWap.plataformabmc.com.br\ApiSabWap\obj\Debug\net8.0\staticwebassets.build.json.cache
