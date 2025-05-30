@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSabWap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708d3f014a78e2492149793b8dc63e27d2c8f896")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bff0f6479a3c2372ed06791339be34d1ac9da7da")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSabWap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSabWap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -29,6 +29,7 @@
         public string Atividade_Etapa { get; set; }
 
         public int Id_Tecnico { get; set; }
+        public string Tecnico_Nome { get; set; }
         public int Id_UsuarioEquipe { get; set; }
 
         public string Equipamento { get; set; }
