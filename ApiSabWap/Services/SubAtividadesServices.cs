@@ -135,7 +135,7 @@ namespace ApiSabWap.Services
             }
         }
 
-        public bool GravarResposta(RespostaFormularioRequest request)
+        public string GravarResposta(RespostaFormularioRequest request)
         {
             try
             {
@@ -150,13 +150,24 @@ namespace ApiSabWap.Services
                     PrOrigemRespostas = "EVA"
                 };
 
-                conn.sqlConnection.Execute("Sp_GravarTiposFormularios_Respostas", parameters, commandType: CommandType.StoredProcedure);
+                var RetProc = "";
 
-                return true;
+                try
+                {
+                    RetProc = conn.sqlConnection.Execute("Sp_GravarTiposFormularios_Respostas", parameters, commandType: CommandType.StoredProcedure).ToString();
+
+                    RetProc = "";
+                }
+                catch (Exception ErrSQL)
+                {
+                    RetProc = ErrSQL.Message;
+                }               
+
+                return RetProc;
             }
             catch (Exception ex)
             {
-                return false;
+                return "";
             }
         }
 

@@ -72,8 +72,8 @@ namespace ApiSabWap.Controllers
             var Resultado = _subactivityService.GravarResposta(request);
 
 
-            if (!Resultado)
-                return StatusCode(500, "[Erro: Erro no processo]");
+            if (!string.IsNullOrEmpty(Resultado))
+                return StatusCode(503, Resultado);
 
 
             return Ok(Resultado);
